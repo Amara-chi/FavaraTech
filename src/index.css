@@ -1,0 +1,162 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply antialiased;
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+/* .animate-float {
+  animation: float 3s ease-in-out infinite;
+} */
+
+@layer utilities {
+  
+  .animate-fade-in {
+    animation: fadeIn 1s ease-in-out;
+  }
+
+  .animate-fade-in-up {
+    animation: fadeInUp 1s ease-in-out;
+  }
+
+  .animate-fade-in-down {
+    animation: fadeInDown 1s ease-in-out;
+  }
+
+  .animate-scroll {
+    animation: scroll 1.5s ease-in-out infinite;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes fadeInDown {
+    from {
+      opacity: 0;
+      transform: translateY(-30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes scroll {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(5px);
+    }
+  }
+
+  .bg-grid-pattern {
+    background-image:
+      linear-gradient(to right, rgba(0, 0, 0, 0.1) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 1px, transparent 1px);
+    background-size: 40px 40px;
+  }
+
+/* Enhanced Cursor Styles */
+.custom-cursor {
+  position: fixed;
+  width: 18px;
+  height: 18px;
+  background: #10b981;
+  border-radius: 50%;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  transition: 
+    width 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+    height 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+    background 0.3s ease,
+    transform 0.3s ease;
+  z-index: 9999;
+  mix-blend-mode: difference;
+}
+
+.custom-cursor.hovered {
+  width: 48px;
+  height: 48px;
+  background: rgba(16, 185, 129, 0.1);
+  border: 2px solid #10b981;
+  transform: translate(-50%, -50%) scale(1.1);
+}
+
+.custom-cursor.disabled {
+  opacity: 0;
+  transform: translate(-50%, -50%) scale(0.8);
+}
+
+.cursor-trail-dot {
+  position: fixed;
+  width: 8px;
+  height: 8px;
+  background: #10b981;
+  border-radius: 50%;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  transition: opacity 0.2s ease;
+  z-index: 9998;
+  mix-blend-mode: difference;
+}
+
+.custom-cursor.hovered ~ .cursor-trail-dot {
+  opacity: 0 !important;
+}
+
+/* Hide default cursor */
+* {
+  cursor: none !important;
+}
+
+/* Input fields should show default cursor */
+input, textarea, [contenteditable] {
+  cursor: text !important;
+}
+
+/* Hide custom cursor on mobile */
+@media (max-width: 768px) {
+  .custom-cursor,
+  .cursor-trail-dot {
+    display: none;
+  }
+  
+  * {
+    cursor: auto !important;
+  }
+}
+}
