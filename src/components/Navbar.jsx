@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Menu, X, Moon, Sun, Code2 } from 'lucide-react';
+import logo from '/assets/FavaraTech.png'; 
 
 export default function Navbar({ darkMode, toggleDarkMode }) {
   const [isOpen, setIsOpen] = useState(false);
@@ -52,7 +53,7 @@ export default function Navbar({ darkMode, toggleDarkMode }) {
             onClick={() => scrollToSection('#')}
             className="flex items-center gap-2 text-2xl font-bold text-green-600 dark:text-green-400 transition-transform hover:scale-105"
           >
-            <img src="/assets/FavaraTech.png" alt="" className='w-28 h-fit'/>
+            <img src={logo} alt="" className='w-28 h-fit'/>
             <span>FavaraTech</span>
           </button>
 
