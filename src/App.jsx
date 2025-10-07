@@ -13,7 +13,7 @@ import Contact from './components/Contact';
 import Footer from './components/Footer';
 import BackToTop from './components/BackToTop';
 import MouseFollower from './components/MouseFollower';
-import FloatingWhatsApp from './components/FloatingWhatsApp';
+import FloatingWhatsApp from './components/FloatingWhatsapp';
 
 function App() {
   const [darkMode, setDarkMode] = useState(false);
