@@ -53,7 +53,7 @@ export default function Navbar({ darkMode, toggleDarkMode }) {
             onClick={() => scrollToSection('#')}
             className="flex items-center gap-2 text-2xl font-bold text-green-600 dark:text-green-400 transition-transform hover:scale-105"
           >
-            <img src={logo} alt="" className='w-24 h-fit'/>
+            <img src={logo} alt="" className='w-24 h-fit img'/>
             <span>FavaraTech</span>
           </button>
 
