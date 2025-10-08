@@ -107,6 +107,14 @@
   z-index: 9999;
   mix-blend-mode: difference;
 }
+  .img{
+     height: 50px;
+  width: auto;
+  object-fit: contain;
+  border-radius: 8px;
+  padding: 2px 6px;
+  max-width: 160px;
+  }
 
 .custom-cursor.hovered {
   width: 48px;
