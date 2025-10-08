@@ -1,4 +1,6 @@
 import { Linkedin, Mail } from 'lucide-react';
+import amara from '/assets/amara.png'
+import favour from '/assets/favour.png'
 
 export default function Team() {
   const team = [
@@ -6,7 +8,7 @@ export default function Team() {
       name: 'Amara Nwachukwu',
       role: 'Co-founder & Web Developer',
       description: 'Passionate about design and functionality, I focus on making every website beautiful and user-friendly.',
-      image: '/assets/amara.png', // Add your image path here
+      image: amara, // Add your image path here
       skills: ['React', 'Business Strategy', 'Responsive Design', 'Performance Optimization'],
       gradient: 'from-green-500 to-emerald-500',
     },
@@ -14,7 +16,7 @@ export default function Team() {
       name: 'Favour Momodu',
       role: 'Co-founder & Business Strategist',
       description: 'I\'m dedicated to helping Nigerian businesses grow, with websites that connect with their audience.',
-      image: '/assets/favour.png', // Add your image path here
+      image: favour, // Add your image path here
       skills: ['UI/UX Design', 'Client Relations', 'Digital Marketing', 'Project Management'],
       gradient: 'from-emerald-500 to-teal-500',
     },

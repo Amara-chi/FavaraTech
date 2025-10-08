@@ -1,4 +1,10 @@
 import { ExternalLink, Code2 } from 'lucide-react';
+import gluto from '/assets/gluto.png';
+import eduschola from '/assets/eduschola.png';
+import laundro from '/assets/laundro.png';
+import makeup from '/assets/make-up.png';
+import shortlet from '/assets/shortlet.png';
+import transsib from '/assets/trans-sib.png'
 
 export default function Portfolio() {
   const openWhatsApp = () => {
@@ -13,7 +19,7 @@ export default function Portfolio() {
       title: 'Gluto Mart',
       description: 'Modern e-commerce site for a Lagos-based agricultural product retailer',
       category: 'E-commerce',
-      image: '/assets/gluto.png',
+      image: gluto,
       tags: ['React', 'E-commerce', 'Payment Integration'],
       liveUrl: 'https://www.catalog.glutointernational.com', // Add live site UR // Optional: GitHub link
     },
@@ -21,7 +27,7 @@ export default function Portfolio() {
       title: 'Quick Dry Cleaning',
       description: 'Beautiful website for a diligent laundry business',
       category: 'Laundro Mart',
-      image: '/assets/laundro.png',
+      image: laundro,
       tags: ['Landing Page', 'Contact Forms', 'Gallery'],
       liveUrl: 'https://quickdrycleaning.com'    
     },
@@ -29,7 +35,7 @@ export default function Portfolio() {
       title: 'EduSchola',
       description: 'Professional business website for a school management system',
       category: 'Education',
-      image: '/assets/eduschola.png',
+      image: eduschola,
       tags: ['Multi-page', 'SEO', 'Education'],
       liveUrl: 'https://dev.eduschola.com.gh/'
     },
@@ -37,7 +43,7 @@ export default function Portfolio() {
       title: 'Make-Up Artist Portfolio',
       description: 'Stunning portfolio site for a passionate make-up artist',
       category: 'Portfolio',
-      image: '/assets/make-up.png',
+      image: makeup,
       tags: ['Portfolio', 'Gallery', 'Animations'],
       liveUrl: 'https://suziegeemakeupartist.com/'
     },
@@ -45,7 +51,7 @@ export default function Portfolio() {
       title: 'Exquisite Shortlet Apartments',
       description: 'Dynamic website with booking system for shortlet apartments',
       category: 'Business',
-      image: '/assets/shortlet.png',
+      image: shortlet,
       tags: ['Booking System', 'Membership', 'Mobile WebApp'],
       liveUrl: 'https://lekkishortlets.com/'
     },
@@ -53,7 +59,7 @@ export default function Portfolio() {
       title: 'Shipping and Logistics Company',
       description: 'Multiple page landing-page website for a Shipping and Logistics Company',
       category: 'Landing Page',
-      image: '/assets/trans-sib.png',
+      image: transsib,
       tags: ['Landing Page', 'Forms', 'WhatsApp'],
       liveUrl: 'https://www.transsiberanshipping.com/'    
     },
